@@ -1,0 +1,246 @@
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>The Herald - News Portal</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+        }
+
+        header{
+            background:#111;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+
+        header h1{
+            font-size:40px;
+        }
+
+        nav{
+            background:#c62828;
+            padding:12px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+
+        .hero{
+            position:relative;
+            width:100%;
+            height:450px;
+            overflow:hidden;
+        }
+
+        .hero img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+        }
+
+        .hero-text{
+            position:absolute;
+            bottom:30px;
+            left:30px;
+            background:rgba(0,0,0,0.6);
+            color:white;
+            padding:20px;
+            border-radius:10px;
+        }
+
+        .container{
+            width:90%;
+            margin:30px auto;
+        }
+
+        .section-title{
+            margin-bottom:20px;
+            font-size:28px;
+            color:#222;
+        }
+
+        .news-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap:20px;
+        }
+
+        .card{
+            background:white;
+            border-radius:10px;
+            overflow:hidden;
+            box-shadow:0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .card img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+        }
+
+        .card-content{
+            padding:15px;
+        }
+
+        .card-content h3{
+            margin-bottom:10px;
+            color:#111;
+        }
+
+        .card-content p{
+            color:#555;
+            line-height:1.5;
+        }
+
+        .tag{
+            display:inline-block;
+            background:#c62828;
+            color:white;
+            padding:5px 10px;
+            margin-top:10px;
+            border-radius:5px;
+            font-size:13px;
+        }
+
+        footer{
+            background:#111;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>The Herald</h1>
+        <p>Latest News & Updates 2026</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Health</a>
+        <a href="#">Technology</a>
+        <a href="#">Politics</a>
+        <a href="#">Environment</a>
+        <a href="#">Sports</a>
+    </nav>
+
+    <section class="hero">
+        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c" alt="Breaking News">
+
+        <div class="hero-text">
+            <h2>Top Headlines of 2026</h2>
+            <p>Stay updated with latest national and international news.</p>
+        </div>
+    </section>
+
+    <div class="container">
+
+        <h2 class="section-title">Latest Articles</h2>
+
+        <div class="news-grid">
+
+            <!-- Health -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f">
+
+                <div class="card-content">
+                    <h3>WHO Issues Urgent Warning as Antibiotic Resistance Deaths Cross 1.27 Million Annually</h3>
+
+                    <p>
+                        Global health experts warn that antibiotic resistance is becoming one of the biggest medical threats worldwide.
+                    </p>
+
+                    <span class="tag">Health</span>
+                </div>
+            </div>
+
+            <!-- Sports -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e">
+
+                <div class="card-content">
+                    <h3>India vs Australia: Kohli’s Unbeaten Century Seals Series Victory in Adelaide</h3>
+
+                    <p>
+                        Virat Kohli played a match-winning innings as India secured a historic victory against Australia.
+                    </p>
+
+                    <span class="tag">Sports</span>
+                </div>
+            </div>
+
+            <!-- Economy -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a">
+
+                <div class="card-content">
+                    <h3>RBI Holds Repo Rate at 6.5%; Governor Signals Cautious Easing Ahead</h3>
+
+                    <p>
+                        The Reserve Bank of India maintained the repo rate while indicating careful economic policy measures.
+                    </p>
+
+                    <span class="tag">Economy</span>
+                </div>
+            </div>
+
+            <!-- Technology -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e">
+
+                <div class="card-content">
+                    <h3>India’s New AI Policy: Who Really Benefits — Citizens or Corporations?</h3>
+
+                    <p>
+                        India’s new Artificial Intelligence policy has sparked debate among technology experts and citizens.
+                    </p>
+
+                    <span class="tag">Technology</span>
+                </div>
+            </div>
+
+            <!-- Politics -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620">
+
+                <div class="card-content">
+                    <h3>Parliament Passes Historic Digital Rights Bill Amid Growing Privacy Concerns</h3>
+
+                    <p>
+                        Parliament approved a major digital rights bill focused on user privacy and data protection.
+                    </p>
+
+                    <span class="tag">Politics</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 The Herald News Portal | Designed by Priti Yadav</p>
+    </footer>
+
+</body>
+</html>
